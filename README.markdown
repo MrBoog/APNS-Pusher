@@ -1,22 +1,22 @@
 # APNS Pusher
-A simple debug application for apple push notification service (APNS).
+A simple debug application for Apple Push Notification Service (APNS).
 
 [Download the latest version](https://github.com/blommegard/APNS-Pusher/releases "Download") 
 
 ## Features
-* Send push notifications to APNS (Apple Push Notification Service) very easy (no configuration needed at all)
-* Grabs the certificate right from your kechain
-* Get the device token autimaticaly via bonjour, no need to log (or similar), usefull when not in sandbox mode
+* Send push notifications to APNS (Apple Push Notification Service) very easily (no configuration needed at all)
+* Grabs the certificate right from your keychain
+* Get the device token automatically via Bonjour; forget about manually retrieving the device token through logging or similar techniques. Useful when not in sandbox mode
 * Support for error response codes
-* Development/Production environment
-* Custom JSON payload
-* Identity export to PEM format
+* Detects Development/Production environment automatically
+* Custom JSON payloads
+* Identity export to PEM format (⌘ + E)
 
 ## Usage of automatic token detection (iOS6+)
 * Copy the files SBAPNSPusher.h/m to your project
 * …or use [Cocoapods](http://cocoapods.org/):
  ```ruby
-pod "SBAPNSPusher", "~> 2.2.1"
+pod "SBAPNSPusher"
  ```
 
 * Run the following code in ```application:didFinishLaunchingWithOptions:```
@@ -25,7 +25,7 @@ pod "SBAPNSPusher", "~> 2.2.1"
 [SBAPNSPusher start];
  ```
 
-* Start the app and make sure your on the same wifi
+* Start the app and make sure you're on the same wifi
 
 ## Screenshots
 ![Screenshot](https://github.com/blommegard/APNS-Pusher/raw/master/Screenshots/main.png "Main")
