@@ -17,6 +17,21 @@
 
 //NSString * const kPBAppDelegateDefaultPayload = @"{\n\t\"aps\":{\n\t\t\"alert\":\"LiuHuan - Test\",\n\t\t\"sound\":\"default\",\n\t\t\"badge\":0\n\t}\n}";
 NSString * const kPBAppDelegateDefaultPayload = @"{\n\t\"aps\":{\n\t\t\"alert\":\"LiuHuan - Test\",\n\t\t\"sound\":\"default\",\n\t\t\"badge\":0\n\t},\n\t\"type\":\"...my...custom...type...\"\n}";
+/*
+ https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ApplePushService.html#//apple_ref/doc/uid/TP40008194-CH100-SW20
+ alert 加一些其他字段：
+ {
+ "aps":{
+ "alert":{
+ "action-loc-key" : "显示",
+ "body" : "LiuHuan - Test"
+ },
+ "sound":"default",
+ "badge":0
+ },
+ "type":"...my...custom...type..."
+ }
+ */
 
 @interface SBAppDelegate ()
 - (NSArray *)identities;
