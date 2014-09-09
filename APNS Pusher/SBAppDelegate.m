@@ -15,7 +15,8 @@
 #import "SBNetServiceSearcher.h"
 #import "SBIdentityTypeDetection.h"
 
-NSString * const kPBAppDelegateDefaultPayload = @"{\n\t\"aps\":{\n\t\t\"alert\":\"LiuHuan - Test\",\n\t\t\"sound\":\"default\",\n\t\t\"badge\":0\n\t}\n}";
+//NSString * const kPBAppDelegateDefaultPayload = @"{\n\t\"aps\":{\n\t\t\"alert\":\"LiuHuan - Test\",\n\t\t\"sound\":\"default\",\n\t\t\"badge\":0\n\t}\n}";
+NSString * const kPBAppDelegateDefaultPayload = @"{\n\t\"aps\":{\n\t\t\"alert\":\"LiuHuan - Test\",\n\t\t\"sound\":\"default\",\n\t\t\"badge\":0\n\t},\n\t\"type\":\"...my...custom...type...\"\n}";
 
 @interface SBAppDelegate ()
 - (NSArray *)identities;
